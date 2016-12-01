@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# send.py - send messages to rabbitmq via pika
 import pika
 
 connection = pika.BlockingConnection(pika.ConnectionParameters('172.19.0.2'))
