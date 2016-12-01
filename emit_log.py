@@ -2,7 +2,8 @@
 import pika
 import sys
 
-connection = pika.BlockingConnection(pika.ConnectionParameters(host=172.19.0.2))
+connection = pika.BlockingConnection(pika.ConnectionParameters(
+    host='172.19.0.2'))
 channel = connection.channel()
 
 channel.echange_declare(exchange='logs',
