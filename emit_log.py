@@ -6,7 +6,7 @@ connection = pika.BlockingConnection(pika.ConnectionParameters(
     host='172.19.0.2'))
 channel = connection.channel()
 
-channel.echange_declare(exchange='logs',
+channel.exchange_declare(exchange='logs',
                         type='fanout')
 
 message = ' '.join(sys.argv[1:]) or "info: Hello World!"
