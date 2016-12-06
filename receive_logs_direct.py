@@ -14,7 +14,7 @@ queue_name = result.method.queue
 
 severities = sys.argv[1:]
 if not severities:
-    sys.stderr.write("usage: %s [info] [warning] [error]\n") % sys.argv[0])
+    sys.stderr.write("Usage: %s [info] [warning] [error]\n") % sys.argv[0])
     sys.exit(1)
 
 for severity in severities:
